@@ -32,6 +32,7 @@ while(True):
             cv2.putText(img, "Got you!",(x,y), font, 1,(255,255,255),2,cv2.LINE_AA)                
 
         # Display the resulting frame
+        cv2.putText(img, "Press 'q' to quit",(0,25), font, 1,(255,255,255),2,cv2.LINE_AA)                
         cv2.imshow('frame',img)
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
